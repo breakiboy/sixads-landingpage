@@ -116,6 +116,15 @@
     </div>
   </section>
 
+  <!-- Live Banners Section -->
+  <section class="live-banners-section">
+    <h2 class="live-banners-title">Current Advertisers</h2>
+    <p class="live-banners-subtitle">These banners are currently live on 6love.ch</p>
+    <div class="live-banners-container" id="live-banners-container">
+      <div class="loading-spinner"></div>
+    </div>
+  </section>
+
   <!-- Pricing Cards Section -->
   <section class="section section-dark">
     <div class="container">
@@ -255,5 +264,56 @@
       <a href="https://6love.ch">6love.ch</a>
     </p>
   </footer>
+
+  <script>
+    const API_BASE = 'https://backend.6love.ch';
+    const LANG = 'en';
+
+    async function fetchSingleBanner() {
+      const randomParam = `nocache=${Math.random()}`;
+      const response = await fetch(`${API_BASE}/api/banners-with-impressions/?limit=1&${randomParam}`, {
+        cache: 'no-store'
+      });
+      if (!response.ok) throw new Error(`Error: ${response.statusText}`);
+      return await response.json();
+    }
+
+    async function fetchLiveBanners() {
+      const screenWidth = window.innerWidth;
+      let bannerLimit = screenWidth <= 768 ? 1 : screenWidth <= 1024 ? 2 : 3;
+
+      const container = document.getElementById("live-banners-container");
+      container.innerHTML = '';
+
+      for (let i = 0; i < bannerLimit; i++) {
+        try {
+          const bannerData = await fetchSingleBanner();
+          const banner = bannerData[0];
+
+          const bannerDiv = document.createElement('div');
+          bannerDiv.className = 'live-banner-item';
+          bannerDiv.innerHTML = `
+            <a href="${banner.link}" target="_blank" rel="nofollow noopener">
+              <img src="${banner.image.full}" alt="${banner.text}" loading="lazy" />
+            </a>
+            <div class="live-banner-badge">
+              <a href="https://6love.ch/${LANG}/pricing">SixAds</a>
+            </div>
+          `;
+          container.appendChild(bannerDiv);
+        } catch (error) {
+          console.error("Error loading banner:", error);
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', fetchLiveBanners);
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(fetchLiveBanners, 250);
+    });
+  </script>
 </body>
 </html>
