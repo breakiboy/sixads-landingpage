@@ -1,0 +1,21 @@
+{
+  "name": "SixAds",
+  "short_name": "SixAds",
+  "description": "SixAds - Werbung auf 6love.ch",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "https://6love.ch/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://6love.ch/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
