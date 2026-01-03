@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SixAds - Bannerwerbung & Premium-Inserate auf 6love.ch. Erreiche tausende Besucher täglich in der Schweiz.">
+  <meta name="keywords" content="Bannerwerbung, Inserate, Werbung, 6love, Schweiz, Premium Ads">
+  <title>SixAds - Werbung auf 6love.ch | Banner & Premium-Inserate</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SixAds - Werbung auf 6love.ch">
+  <meta property="og:description" content="Bannerwerbung & Premium-Inserate. Erreiche tausende Besucher täglich.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sixads.ch/de/">
+  <meta property="og:locale" content="de_CH">
+
+  <!-- Alternate languages -->
+  <link rel="alternate" hreflang="de" href="https://sixads.ch/de/">
+  <link rel="alternate" hreflang="en" href="https://sixads.ch/en/">
+  <link rel="alternate" hreflang="fr" href="https://sixads.ch/fr/">
+  <link rel="alternate" hreflang="it" href="https://sixads.ch/it/">
+  <link rel="alternate" hreflang="x-default" href="https://sixads.ch/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://6love.ch/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://6love.ch/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://6love.ch/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <a href="/de/" class="lang-btn active">DE</a>
+    <a href="/en/" class="lang-btn">EN</a>
+    <a href="/fr/" class="lang-btn">FR</a>
+    <a href="/it/" class="lang-btn">IT</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="logo">
+        <span class="logo-text">Six<span class="highlight">Ads</span></span>
+      </div>
+
+      <h1>Deine Werbung auf<br><span class="highlight">6love.ch</span></h1>
+
+      <p class="subtitle">
+        Erreiche tausende Besucher täglich mit Bannerwerbung<br>
+        und Premium-Inseraten auf der Schweizer Plattform.
+      </p>
+
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-number">50K+</span>
+          <span class="stat-label">Monatliche Besucher</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Sprachen</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Online</span>
+        </div>
+      </div>
+
+      <a href="https://6love.ch/de/pricing" class="cta-button">
+        <span>Jetzt Werbung schalten</span>
+        <span class="arrow">&#8594;</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Banner Advertising Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Bannerwerbung</h2>
+      <p class="section-subtitle">Maximale Sichtbarkeit auf allen Seiten</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#128200;</div>
+          <h3>Hohe Reichweite</h3>
+          <p>Dein Banner wird auf allen Seiten angezeigt - Home, Inserate, Blog und mehr.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#127919;</div>
+          <h3>Zielgruppe</h3>
+          <p>Erreiche genau die richtige Zielgruppe für dein Angebot in der Schweiz.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128202;</div>
+          <h3>Statistiken</h3>
+          <p>Detaillierte Impressions- und Click-Statistiken in Echtzeit.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128241;</div>
+          <h3>Responsive</h3>
+          <p>Optimale Darstellung auf Desktop, Tablet und Mobile.</p>
+        </div>
+      </div>
+
+      <div class="banner-showcase">
+        <div class="banner-example">
+          <a href="https://sixnetwork.ch/" target="_blank" rel="noopener">
+            <img src="https://backend.6love.ch/media/banners/sixnetwork_banner.webp" alt="Banner Beispiel" class="banner-img">
+          </a>
+          <span class="banner-label">Beispiel: Leaderboard Banner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Banners Section -->
+  <section class="live-banners-section">
+    <h2 class="live-banners-title">Aktuelle Werbekunden</h2>
+    <p class="live-banners-subtitle">Diese Banner sind gerade live auf 6love.ch</p>
+    <div class="live-banners-container" id="live-banners-container">
+      <div class="loading-spinner"></div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Inserate-Pakete</h2>
+      <p class="section-subtitle">Wähle das passende Paket für deine Bedürfnisse</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Basic</h3>
+            <div class="price">Gratis</div>
+          </div>
+          <ul class="pricing-features">
+            <li>&#10003; 1 Inserat</li>
+            <li>&#10003; 5 Bilder</li>
+            <li>&#10003; Standard-Listing</li>
+            <li>&#10003; 30 Tage Laufzeit</li>
+            <li class="disabled">&#10007; Keine Hervorhebung</li>
+            <li class="disabled">&#10007; Kein Video</li>
+          </ul>
+          <a href="https://6love.ch/de/register" class="pricing-btn">Registrieren</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-badge">Beliebt</div>
+          <div class="pricing-header">
+            <h3>Gold</h3>
+            <div class="price">CHF 29<span>/Monat</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>&#10003; 3 Inserate</li>
+            <li>&#10003; 15 Bilder pro Inserat</li>
+            <li>&#10003; Gold-Hervorhebung</li>
+            <li>&#10003; Video-Upload</li>
+            <li>&#10003; Priorität im Listing</li>
+            <li>&#10003; Statistiken</li>
+          </ul>
+          <a href="https://6love.ch/de/pricing" class="pricing-btn primary">Jetzt buchen</a>
+        </div>
+
+        <div class="pricing-card premium">
+          <div class="pricing-header">
+            <h3>Platin</h3>
+            <div class="price">CHF 49<span>/Monat</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>&#10003; Unbegrenzte Inserate</li>
+            <li>&#10003; 30 Bilder pro Inserat</li>
+            <li>&#10003; Platin-Hervorhebung</li>
+            <li>&#10003; Video + YouTube</li>
+            <li>&#10003; Top-Position</li>
+            <li>&#10003; Premium Support</li>
+          </ul>
+          <a href="https://6love.ch/de/pricing" class="pricing-btn">Jetzt buchen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Warum SixAds?</h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">&#127464;&#127469;</div>
+          <div class="benefit-content">
+            <h3>Schweizer Qualität</h3>
+            <p>Lokale Plattform mit Fokus auf den Schweizer Markt. Seriös und vertrauenswürdig.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">&#128176;</div>
+          <div class="benefit-content">
+            <h3>Faire Preise</h3>
+            <p>Transparente Preise ohne versteckte Kosten. Du zahlst nur was du brauchst.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">&#9889;</div>
+          <div class="benefit-content">
+            <h3>Sofort online</h3>
+            <p>Deine Werbung ist innerhalb von Minuten live und erreicht sofort Besucher.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">&#128274;</div>
+          <div class="benefit-content">
+            <h3>Diskret & Sicher</h3>
+            <p>Sichere Zahlungsabwicklung und diskrete Rechnungsstellung.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">&#127760;</div>
+          <div class="benefit-content">
+            <h3>15 Sprachen</h3>
+            <p>Erreiche internationale Besucher mit automatischer Übersetzung.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">&#128187;</div>
+          <div class="benefit-content">
+            <h3>Einfache Verwaltung</h3>
+            <p>Intuitives Dashboard zum Verwalten deiner Inserate und Statistiken.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-cta">
+    <div class="container">
+      <h2>Bereit durchzustarten?</h2>
+      <p>Registriere dich jetzt kostenlos und schalte deine erste Werbung.</p>
+      <div class="cta-buttons">
+        <a href="https://6love.ch/de/register" class="cta-button">Kostenlos registrieren</a>
+        <a href="https://6love.ch/de/pricing" class="cta-button secondary">Preise ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://6love.ch/de/privacy">Datenschutz</a>
+      <span class="divider">|</span>
+      <a href="https://6love.ch/de/terms">AGB</a>
+      <span class="divider">|</span>
+      <a href="https://6love.ch/de/about">Über uns</a>
+      <span class="divider">|</span>
+      <a href="https://6love.ch/de/contact">Kontakt</a>
+    </div>
+    <p class="copyright">
+      &copy; 2026 SixAds.ch - Ein Service von
+      <a href="https://6love.ch">6love.ch</a>
+    </p>
+  </footer>
+
+  <script>
+    const API_BASE = 'https://backend.6love.ch';
+    const LANG = 'de';
+
+    async function fetchSingleBanner() {
+      const randomParam = `nocache=${Math.random()}`;
+      const response = await fetch(`${API_BASE}/api/banners-with-impressions/?limit=1&${randomParam}`, {
+        cache: 'no-store'
+      });
+      if (!response.ok) throw new Error(`Fehler: ${response.statusText}`);
+      return await response.json();
+    }
+
+    async function fetchLiveBanners() {
+      const screenWidth = window.innerWidth;
+      let bannerLimit = screenWidth <= 768 ? 1 : screenWidth <= 1024 ? 2 : 3;
+
+      const container = document.getElementById("live-banners-container");
+      container.innerHTML = '';
+
+      for (let i = 0; i < bannerLimit; i++) {
+        try {
+          const bannerData = await fetchSingleBanner();
+          const banner = bannerData[0];
+
+          const bannerDiv = document.createElement('div');
+          bannerDiv.className = 'live-banner-item';
+          bannerDiv.innerHTML = `
+            <a href="${banner.link}" target="_blank" rel="nofollow noopener">
+              <img src="${banner.image.full}" alt="${banner.text}" loading="lazy" />
+            </a>
+            <div class="live-banner-badge">
+              <a href="https://6love.ch/${LANG}/pricing">SixAds</a>
+            </div>
+          `;
+          container.appendChild(bannerDiv);
+        } catch (error) {
+          console.error("Fehler beim Laden eines Banners:", error);
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', fetchLiveBanners);
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(fetchLiveBanners, 250);
+    });
+  </script>
+</body>
+</html>
