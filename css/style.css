@@ -728,3 +728,39 @@ footer {
     padding: 24px;
   }
 }
+
+/* Network Section */
+.network-section {
+  padding: 40px 24px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.network-section h3 {
+  color: var(--gray);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 16px 0 8px 0;
+}
+
+.network-section h3:first-child {
+  margin-top: 0;
+}
+
+.network-section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.network-section ul li a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.network-section ul li a:hover {
+  color: var(--primary);
+}
