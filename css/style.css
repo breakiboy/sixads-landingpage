@@ -731,31 +731,46 @@ footer {
 
 /* Network Links Section */
 .network-section {
-  padding: 40px 24px;
+  padding: 60px 24px;
   background: rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 
-.network-title {
-  font-size: 1rem;
+.network-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.network-main-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.network-category {
+  margin-bottom: 24px;
+}
+
+.network-category-title {
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--gray);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .network-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 8px 16px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .network-links a {
   color: var(--gray-dark);
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 }
 
