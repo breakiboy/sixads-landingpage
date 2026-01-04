@@ -733,26 +733,28 @@ footer {
 .network-section {
   padding: 40px 24px;
   background: rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
 }
 
 .network-section h3 {
   color: var(--gray);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 16px 0 8px 0;
-}
-
-.network-section h3:first-child {
-  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .network-section ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
+}
+
+.network-section ul li {
+  margin-bottom: 6px;
 }
 
 .network-section ul li a {
@@ -763,4 +765,16 @@ footer {
 
 .network-section ul li a:hover {
   color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .network-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .network-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
