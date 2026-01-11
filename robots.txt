@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://sixads.ch/sitemap.xml
